@@ -5,45 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>How I Met Your Mother</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>How I Met Your Mother Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header>
-    <span class="score">SCORE: 2 correct, 5 wrong</span>
-  </header>
   <main>
-    <section class="quizForm">
-      <div class="question-1">
-        <h1>Question 1 of 10</h1>
-        <h2>The question is written here (?)</h2>
-        <form>
-          <fieldset>
-            <!-- User selected this answer, AND it's correct -->
-            <label class="answerOption correct-answer">
-              <input type="radio" value="Answer" name="answer" required="">
-              <span>Answer</span>
-            </label>
-            <label class="answerOption">
-              <input type="radio" value="Answer" name="answer" required="">
-              <span>Answer</span>
-            </label>
-            <label class="answerOption">
-              <input type="radio" value="Answer" name="answer" required="">
-              <span>Answer</span>
-            </label>
-            <label class="answerOption">
-              <input type="radio" value="Answer" name="answer" required="">
-              <span>Answer</span>
-            </label>
-            <span class="correct-notification">CORRECT!</span>
-            <button type="submit" class="nextButton">Next</button>
+    <header>
+      <h1 class="quiz-title">How I Met Your Mother Quiz</h1>
+    </header>
+    <section>
+      <div class="intro">
+        <p>How well do you know How I Met Your Mother?</p>
+        <button class="startButton" aria-label="Start Quiz">Start the quiz</button>
+      </div>
+    </section>
+    <section>
+      <div class="container hidden">
+        <div class="currentStats"></div>
+        <div class="results"></div>
+        <form class="js-form">
+          <fieldset class="quizAnswers">
+            <div class="question-container"></div>
           </fieldset>
         </form>
       </div>
+      <div class="stats hidden"></div>
     </section>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
