@@ -63,21 +63,27 @@ legend.questionDiv {
   margin-bottom: 30px;
 }
 
-.button {
+.answerLabel {
   background-color: #8B8BAE;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   width: 100%;
-  display: inline-block;
+  display: block;
   color: black;
   margin-bottom: 4px;
   padding: 8px;
   margin-top: 1px;
   text-align: left;
+  cursor: pointer;
 }
 
 .hidden {
   display: none;
+}
+
+button,
+.answerInput {
+  cursor: pointer;
 }
 
 button {
@@ -92,8 +98,8 @@ button {
 
 .quizAnswers {
   border: none;
-  cursor: pointer;
 }
+
 
 /* MEDIA QUERIES */
 @media (min-width:1024px) {

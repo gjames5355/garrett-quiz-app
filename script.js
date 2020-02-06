@@ -48,11 +48,9 @@ function displayQuestion() {
   let answers = '';
   for (let i = 0; i < STORE.length; i++) {
     answers += `
-      <div class="button">
-        <label class="answerLabel" for="user-answer" name="user-answer">
+        <label class="answerLabel">
           <input type="radio" class="answerInput" name="user-answer" id="user-answer" value="${i}" aria-label="radioButton" required>${STORE[currentQuestion].choices[i]}
         </label>
-      </div>
     `;
   }
 
@@ -63,8 +61,8 @@ function displayQuestion() {
     <div class="answersDiv">
       ${answers}
     </div>
-    <div class="checkAnswerButton">
-      <button type="submit" class="checkAnswer">Submit</button>
+    <div class="submitAnswerButton">
+      <button type="submit" class="submitAnswer">Submit</button>
     </div>
   `);
 }
