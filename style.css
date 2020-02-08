@@ -30,6 +30,11 @@ h3 {
   padding-top: 5px;
 }
 
+.answerImg {
+  display: block;
+  margin: 20px auto;
+}
+
 .quiz-title {
   font-size: 1.6em;
 }
@@ -84,6 +89,10 @@ legend.questionDiv {
 button,
 .answerInput {
   cursor: pointer;
+}
+
+.answerInput {
+  margin-right: 20px;
 }
 
 button {

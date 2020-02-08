@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <main>
-    <header>
+  <main role="main">
+    <header role="banner">
       <h1 class="quiz-title">How I Met Your Mother Quiz</h1>
     </header>
     <section>
@@ -22,15 +22,15 @@
       </div>
     </section>
     <section>
-      <div class="container hidden">
-        <div class="currentStats"></div>
-        <div class="results"></div>
+      <main class="container hidden">
+        <section class="currentStats"></section>
+        <section class="results"></section>
         <form class="js-form">
           <fieldset class="quizAnswers">
             <div class="question-container"></div>
           </fieldset>
         </form>
-      </div>
+      </main>
       <div class="stats hidden"></div>
     </section>
   </main>
